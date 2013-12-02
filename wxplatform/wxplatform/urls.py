@@ -5,8 +5,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'wxplatform.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
+    # url(r'^$', 'wx.views.home', name='home'),
+    url(r'^wx/', include(wxaccount.urls)),
     url(r'^admin/', include(admin.site.urls)),
 )
